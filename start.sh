@@ -1,14 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Il comando per lanciare questo script da github è: bash -c "$(wget -qLO - https://raw.githubusercontent.com/andry360/prxmx-post-script/refs/heads/main/start_local.sh)"
+# Il comando per lanciare questo script da github è: bash -c "$(wget -qLO - https://raw.githubusercontent.com/andry360/prxmx-post-script/refs/heads/main/start.sh)"
 echo "Script progetto proxmox v1"
 
-GITHUB_URL_= "https://raw.githubusercontent.com/andry360/prxmx-post-script/refs/heads/main/"
+GITHUB_URL= "https://raw.githubusercontent.com/andry360/prxmx-post-script/refs/heads/main"
 
 # Elenco degli script
 scripts=(
-    "https://raw.githubusercontent.com/andry360/prxmx-post-script/refs/heads/main/1_pxmx-post-install.sh Script post-installazione Proxmox con git"
-    "https://gitlab.com/andry360/prxmx-config/-/raw/main/start_local.sh?ref_type=heads Avvio script gitlab"
+    "$GITHUB_URL/1_git.sh Script installazione git in Proxmox"
+    "$GITHUB_URL/2_avvio-start_local-gitlab.sh Avvio script gitlab"
 )
 
 # Mostra l'elenco numerato
