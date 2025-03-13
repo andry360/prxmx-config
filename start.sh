@@ -3,7 +3,7 @@
 # Il comando per lanciare questo script da github è: bash -c "$(wget -qLO - https://raw.githubusercontent.com/andry360/prxmx-config/refs/heads/main/start.sh)"
 echo "Script progetto proxmox v1"
 
-GITHUB_URL="https://raw.githubusercontent.com/andry360/prxmx-post-script/refs/heads/main"
+GITHUB_URL="https://raw.githubusercontent.com/andry360/prxmx-config/refs/heads/main"
 
 # Elenco degli script
 scripts=(
