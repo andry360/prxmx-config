@@ -3,7 +3,7 @@
 header_info() {
   clear
   cat <<"EOF"
-  Install Git and clone prxmx-config project
+Install Git and clone prxmx-config project v1
 EOF
 }
 
