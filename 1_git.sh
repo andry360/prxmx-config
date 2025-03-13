@@ -50,11 +50,25 @@ clone_git_project() {
   esac
 }
 
+execute_permissions() {
+  # Assegna i permessi di esecuzione a tutti gli script in tutte le sottocartelle
+  find . -type f -name "*.sh" -exec chmod +x {} \;
+
+  # Verifica se i permessi sono stati applicati correttamente
+  if find . -type f -name "*.sh" ! -executable | grep -q .; then
+    msg_error "Some scripts did not receive execution permissions. Check manually."
+    return 1
+  else
+    msg_ok "All scripts now have execution permissions."
+  fi
+}
+
 # Esecuzione delle routine
 start_routines() {
   header_info
   install_git
   clone_git_project
+  execute_permissions
 }
 
 # Avvio dello script
