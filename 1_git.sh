@@ -7,6 +7,16 @@ header_info() {
 EOF
 }
 
+msg_info() {
+  echo -e "\e[34m[INFO]\e[0m $1"
+}
+msg_ok() {
+  echo -e "\e[32m[OK]\e[0m $1"
+}
+msg_error() {
+  echo -e "\e[31m[ERROR]\e[0m $1"
+}
+
 # Installazione di Git (opzionale)
 install_git() {
   read -p "Do you want to install Git? (y/n): " choice
