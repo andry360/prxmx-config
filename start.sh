@@ -7,7 +7,7 @@ GITHUB_URL="https://raw.githubusercontent.com/andry360/prxmx-config/refs/heads/m
 
 # Elenco degli script
 scripts=(
-    "$GITHUB_URL/1_git.sh|Script installazione git in Proxmox"
+    "$GITHUB_URL/1_install-git.sh|Script installazione git in Proxmox"
     "$GITHUB_URL/2_avvio-start_local-gitlab.sh|Avvio script gitlab"
 )
 
